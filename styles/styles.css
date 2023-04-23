@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'aquilinetwo';
+    src: url('../fonts/AquilineTwo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dobkin';
+    src: url('../fonts/DobkinPlain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'chanticleer';
+    src: url('../fonts/Chanticleer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #193833;
+    --secondary-color: #853d21;
+    --accent1-color: #382219;
+    --accent2-color: #49857b;
+    --accent3-color: #2e8576;
+  
+    --heading-font: 'dobkin';
+    --h1-font: 'aquilinetwo';
+    --paragraph-font: 'chatincleer', Helvetica, sans-serif;
+}
+body {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat ( 8, 128px );
+    grid-template-rows: repeat ( 10, 128px );
+    font-family: 'aquilinetwo';
+}
+
+.banner {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    background-color: #382219;
+    border-radius: 10%;
+    z-index: 0;
+}
+
+.banner .banner-image {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+.banner-image img {
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.banner .banner-heading {
+    display: grid;
+    grid-column: 3/9;
+    grid-row: 1/2;
+    font-family: 'dobkin';
+    justify-content: left;
+    align-content: center;
+}
+
+.banner .banner-heading h1 {
+    display: grid;
+    text-align: left;
+    color: white;
+    font-family: 'aquilinetwo';
+    font-size: 64px;
+    align-self: center;
+    justify-self: left;
+    z-index: 99;
+}
+
+.lessons {
+    display: grid;
+    grid-column: 1/9;
+}
+
+.lessons li {
+    text-align: left;
+    font-family: 'chanticleer';
+}
+
+.lessons h1 {
+    font-family: 'chanticleer';
+    font-size: 32px;
+    font-weight: 700;
+    text-align:left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+.lessons p {
+    font-family: 'chanticleer';
+    text-align: left;
+    font-style: italic;
+}
+
+.footer-content {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 9/10;
+    height: 128px;
+    width: 1024px;
+    background: #382219;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.footer-content {
+    padding: 10px;
+    width: 100%;
+}
+  
+.footer-content h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+.footer-content p {
+    font-family: 'chanticleer';
+    color: #853d21;
+    text-align: center;
+}
