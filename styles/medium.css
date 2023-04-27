@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'aquilinetwo';
+    src: url('../fonts/AquilineTwo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dobkin';
+    src: url('../fonts/DobkinPlain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'chanticleer';
+    src: url('../fonts/Chanticleer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #193833;
+    --secondary-color: #853d21;
+    --accent1-color: #382219;
+    --accent2-color: #49857b;
+    --accent3-color: #2e8576;
+  
+    --heading-font: 'dobkin', Helvetica, sans-serif;
+    --h1-font: 'aquilinetwo', Helvetica, sans-serif;
+    --paragraph-font: 'chatincleer', Helvetica, sans-serif;
+}
+@media only screen and (min-width: 32.5em) {
+    
+    body {
+        min-width: 32.5em;
+    }
+
+    .content {
+        grid-template-columns: repeat ( 8, 1fr);
+    }
+
+    .banner {
+        grid-column: 1/9;
+        border-radius: 10%;
+    }
+    
+    .banner .banner-heading {
+        grid-column: 3/9;
+        grid-row: 1/2;
+    }
+    
+    .banner .banner-heading h1 {
+        text-align: center;
+        justify-self: center;
+    }
+}
